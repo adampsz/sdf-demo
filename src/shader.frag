@@ -288,11 +288,12 @@ float sceneInstitute(vec3 point) {
 }
 
 float sceneInstituteForever(vec3 p) {
+  p *= 5.0;
   float s = 30.0;
   vec2 id = round(p.xz / s);
   vec2 o = sign(p.xz - s * id);
   vec3 r = p - vec3(s * id, 0.0).xzy;
-  return sceneInstitute(r);
+  return sceneInstitute(r) / 5.0;
 }
 
 float sceneSimple(vec3 point) {
