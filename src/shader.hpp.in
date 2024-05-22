@@ -1,0 +1,2 @@
+const char *VERT = R"""(@SHADER_VERT@)""";
+const char *FRAG = R"""(@SHADER_FRAG@)""";
